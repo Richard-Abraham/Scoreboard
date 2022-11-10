@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <div class="score">
+            <h3 class="score-title">HOME</h3>
+            <div class="score-box">
+                <p id="score-1" class="score-text">0</p>
+            </div>
+            <div class="score-add">
+                <button onClick="scoreOnePlusOne()">+1</button>
+                <button onClick="scoreOnePlusTwo()">+2</button>
+                <button onClick="scoreOnePlusThree()">+3</button>
+        </div>
+        </div>
+        <div class="score">
+            <h3 class="score-title">GUEST</h3>
+            <div class="score-box">
+                <p id="score-2"class="score-text">0</p>
+            </div>
+            <div class="score-add">
+                <button onClick="scoreTwoPlusOne()">+1</button>
+                <button onClick="scoreTwoPlusTwo()">+2</button>
+                <button onClick="scoreTwoPlusThree()">+3</button>
+             </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
