@@ -1,7 +1,9 @@
 let scoreOne = document.getElementById("score-1");
 let scoreTwo = document.getElementById("score-2");
 let homeScore = 0;
-let guestScore = 0
+let guestScore = 0;
+let reset = 0;
+
 function scoreOnePlusOne(){
  scoreOne.innerText = homeScore += 1;
 }
@@ -20,3 +22,11 @@ function scoreTwoPlusTwo(){
 function scoreTwoPlusThree(){
     scoreTwo.innerText = guestScore += 3;
 }
+
+function clearScore(){
+    homeScore = reset;
+    guestScore = reset;
+    scoreOne.innerText = homeScore;
+    scoreTwo.innerText = guestScore;
+}
+

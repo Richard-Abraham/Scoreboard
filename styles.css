@@ -21,7 +21,7 @@ body{
 
 
 .container {
-    position: absolute;
+    position: absolute;;
     top: 0;
     right: 0;
     bottom: 0;
@@ -31,10 +31,11 @@ body{
     padding: 10px;
     display: flex;
     justify-content: center;
-    max-width: 65%;
-    height: 40%;
+    max-width: 70%;
+    height: 60vh;
     margin: auto;
     background-color: rgba(84, 82, 124, 0.734);
+    
 }
 
 .score {
@@ -42,8 +43,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100;
+    width: 25vh;
+    height: 40vh;
     padding: 2px;
-    margin: 1rem;
+   
+    
 
 }
 /* score box */
@@ -54,6 +59,7 @@ body{
     background: #080001;
     margin-bottom: 10px;
     border-radius: 5px;
+    max-width: 100;
     width: 20vh;
     height: 20vh;
     color: red;
@@ -72,8 +78,9 @@ body{
   
 }
 .score-title {
-    font-weight: 400;
-    color: whitesmoke
+    font-weight: 500;
+    color: whitesmoke;
+    font-size: 40px;
 }
 
 /*score add */
@@ -81,26 +88,54 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  max-width: 100;
   width: 20vh;
   margin-bottom: 10px;
   
   
 }
 .score-add > button {
+  max-width: 100%;
   width: 45px;
   height: 45px;
   background-color: blanchedalmond;
-  text-align: center;
-  height: 50%;
+  /*text-align: center;
+  height: 50%;*/
   font-family: digital,'Cursed Timer ULiL';
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 28px;
 /* or 155% */
-text-align: center;
-color: #16181e;
-border: 2px solid #9AABD8;
-border-radius: 5px;
+  text-align: center;
+  color: #16181e;
+  border: 2px solid #9AABD8;
+  border-radius: 5px;
 
+}
+
+.remove-btns{ 
+    position: absolute;
+    top: 100px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 5vh; 
+    margin: 5px;
+    
+}
+
+.remove-btns > button{
+  width: 100vh;
+  height: 45px;
+  padding: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  margin: 3px;
+  border: 2px solid #9AABD8;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  font-family: sans-serif;
 }
